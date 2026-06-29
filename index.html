@@ -1,286 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yutong (Jennifer) Zhong | Research Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #57068c; /* NYU Purple */
-            --text-color: #2d3436;
-            --bg-color: #f9f9f9;
-            --card-bg: #ffffff;
-            --border-color: #e0e0e0;
-        }
-
-        * { box-sizing: border-box; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1000px;
-            width: 90%;
-            margin: 40px 0;
-            background: var(--card-bg);
-            padding: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border-radius: 8px;
-        }
-
-        /* Header Section */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 30px;
-            margin-bottom: 40px;
-        }
-
-        .header-text h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            color: var(--primary-color);
-        }
-
-        .contact-info {
-            margin-top: 10px;
-            font-size: 0.9rem;
-        }
-
-        .contact-info a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin-right: 15px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--primary-color);
-        }
-
-        /* Sections */
-        h2 {
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 15px;
-            margin: 40px 0 20px;
-        }
-
-        .exp-item {
-            margin-bottom: 30px;
-        }
-
-        .exp-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: 600;
-            color: #111;
-        }
-
-        .exp-sub {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 8px;
-        }
-
-        .publication-card {
-            background: #f0f4f8;
-            padding: 15px 20px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            border-left: 4px solid #2ecc71;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        /* Badges */
-        .badge {
-            display: inline-block;
-            background: #eee;
-            padding: 2px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin: 2px;
-        }
-
-        footer {
-            margin-top: 50px;
-            font-size: 0.8rem;
-            color: #999;
-            text-align: center;
-            padding-bottom: 40px;
-        }
-
-        @media (max-width: 768px) {
-            header { flex-direction: column-reverse; text-align: center; }
-            .container { padding: 20px; }
-            .exp-header { flex-direction: column; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yutong (Jennifer) Zhong — Computer Science undergraduate at New York University. Research in reliable RAG, computer vision, multimodal 3D grounding, and visual perception." />
+  <title>Yutong (Jennifer) Zhong</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <div class="container">
-        <header>
-            <div class="header-text">
-                <h1>Yutong (Jennifer) Zhong</h1>
-                <p style="font-weight: 500; font-size: 1.1rem; color: #555;">Computer Science Undergraduate @ New York University </p>
-                <div class="contact-info">
-                    <a href="mailto:yz9760@nyu.edu">yz9760@nyu.edu</a>
-                    <a href="https://jenniferzhong131.github.io/NYU/" target="_blank">Portfolio Site</a> 
-                    <span>+1 917-801-7965</span> 
-                </div>
-            </div>
-            <img src="me.jpg" alt="Yutong Zhong" class="profile-photo">
-        </header>
-
-        <section>
-            <h2>Education</h2>
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>New York University (NYU)</span>
-                    <span>Sept 2023 - Present</span>
-                </div>
-                <div class="exp-sub">B.S. in Computer Science | GPA: 3.85 / 4.0 </div>
-                <p>Relevant Coursework: Calculus I-III, Linear Algebra, Machine Learning, Basic Algorithms. </p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Publications</h2>
-            <div class="publication-card">
-                <strong>WHERE, NOT WHAT: Compelling Video LLMs to Learn Geometric Causality for 3D-Grounding</strong> <br>
-                <em>Accepted by ICSSAP 2026</em> | Yutong Zhong 
-            </div>
-            <div class="publication-card" style="border-left-color: #3498db;">
-                <strong>An Overview of RSA and OAEP Padding</strong> <br>
-                <em>Published on ICCIA 2022 (DOI: 10.54097/hset.v1i.431)</em> 
-            </div>
-        </section>
-
-        <section>
-            <h2>Research Experience</h2>
-            
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>New York University | Researcher</span> 
-                    <span>Sept 2025 - Present</span> 
-                </div>
-                <div class="exp-sub">Ambiguity-Aware Hybrid RAG for Reliable Question Answering (Advisor: Professor Matthew Zeidenberg) </div>
-                <ul>
-                    <li>Developing a hybrid RAG framework integrating natural language to private structured SQL databases and high-dimensional semantic vectors. </li>
-                    <li>Evaluating response paradigms including direct answering, clarification-first, and dual-output interpretations.</li>
-                    <li>Annotating a custom dataset of 25–30 complex natural language questions to measure accuracy and interaction costs.</li>
-                    <li>Collaborating with a private company to implement and validate the system in a real-world enterprise analytics environment. </li>
-                </ul>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>Central South University | Research Assistant</span> 
-                    <span>May 2025 - Present</span> 
-                </div>
-                <div class="exp-sub">Efficient Multi-Modal Behavior Understanding </div>
-                <ul>
-                    <li>Identified 2D semantic shortcuts in multi-view 3D grounding via A/B/C ablation studies. </li>
-                    <li>Designed plug-and-play debiasing and implemented a two-forward training pipeline with Cognitive-Conflict Training. </li>
-                </ul>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>University of Liverpool | Remote Research Assistant</span> 
-                    <span>June 2025 - Present</span> 
-                </div>
-                <div class="exp-sub">T-MOTR: Temporal-enhanced MOTR for Multi-Object Tracking </div>
-                <ul>
-                    <li>Proposed and implemented a cross-attention gating module to strengthen inter-frame query association.</li>
-                    <li>Achieved HOTA (+3.1%) and IDF1 (+4.7%) improvements on the DanceTrack benchmark over original MOTR.</li>
-                </ul>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>University of Liverpool | Remote Research Assistant</span> 
-                    <span>Dec 2024 - Present</span> 
-                </div>
-                <div class="exp-sub">LipSwin: Lightweight Swin Transformer for Visual Speech Recognition </div>
-                <ul>
-                    <li>Customized a 3D Spatio-Temporal Embedding Module to preserve fine-grained lip motion dynamics.</li>
-                    <li>Integrated a lightweight 1D Convolutional Attention Module to improve temporal feature extraction.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Professional Experience</h2>
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>PwC (PricewaterhouseCoopers) | Data Analysis Intern</span>
-                    <span>Jun 2024 - Aug 2024</span> 
-                </div>
-                <ul>
-                    <li>Conducted data cleaning, analysis, and visualization using Python and Excel.</li>
-                    <li>Automated data workflows and created structured data tables to improve efficiency.</li>
-                </ul>
-            </div>
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span>NYU Math Department | Grader</span>
-                    <span>Sep 2024 - Present</span> 
-                </div>
-                <ul>
-                    <li>Grading for Courant Math Department and coordinating peer group problem-solving sessions.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Skills & Awards</h2>
-            <p>
-                <strong>Technical Skills:</strong> 
-                <span class="badge">Python</span> <span class="badge">Java</span> 
-                <span class="badge">PyTorch</span> <span class="badge">LaTeX</span> 
-            </p>
-            <p>
-                <strong>Awards:</strong> 
-                CEMC Hypatia Contest Distinction, Josh Goldfaden Award (Fall 2023), AISSU Top 5% GPA (3.97).
-            </p>
-            <p>
-                <strong>Languages:</strong> 
-                English (TOEFL 110, IELTS 7), Mandarin. 
-            </p>
-        </section>
+  <header class="hero section" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> NYU Computer Science · AI / Vision / RAG</p>
+        <h1>Building reliable AI systems for <span>language, vision, and structured data.</span></h1>
+        <p class="lede">
+          I am an undergraduate student in Computer Science at New York University, with a minor in Mathematics. My research interests lie in reliable retrieval-augmented generation, multimodal learning, computer vision, and geometry-aware 3D grounding.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:yz9760@nyu.edu">Email me</a>
+          <a class="btn btn-secondary" href="Yutong_Zhong_CV.pdf" target="_blank" rel="noopener">CV</a>
+          <a class="btn btn-secondary" href="https://github.com/JenniferZhong131" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <figure class="portrait-card" aria-label="Portrait of Yutong Zhong">
+        <img src="me.jpg" alt="Yutong (Jennifer) Zhong" />
+      </figure>
     </div>
+  </header>
 
-    <footer>
-        &copy; 2026 Yutong Zhong
-    </footer>
+  <main>
+    <section class="about section section-tight" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Research-oriented CS undergraduate at NYU.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            I study how AI systems can become more grounded, interpretable, and reliable when working with private business data, visual scenes, and multimodal inputs. My current work includes SQL-verified RAG for spreadsheet question answering, 2D/3D representation reforming for multimodal 3D grounding, and temporal modeling for video perception.
+          </p>
+          <p>
+            I am especially interested in systems where language models must not only produce fluent answers, but also expose uncertainty, verify numerical reasoning, and rely on the correct visual or structured evidence.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="section section-alt" id="interests">
+      <div class="container split-head">
+        <div>
+          <p class="section-label">Research Areas</p>
+          <h2>Where I focus.</h2>
+        </div>
+        <ul class="pill-grid" aria-label="Research areas">
+          <li>Retrieval-Augmented Generation</li>
+          <li>SQL-based Question Answering</li>
+          <li>Computer Vision</li>
+          <li>Multimodal Learning</li>
+          <li>3D Grounding</li>
+          <li>Temporal Video Understanding</li>
+          <li>Ablation & Error Analysis</li>
+          <li>Reliable AI Systems</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Selected Research</p>
+          <h2>Projects at the intersection of AI reliability and perception.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card featured">
+            <div class="project-meta">New York University · Sep. 2025 – Jun. 2026</div>
+            <h3>Reliable RAG for Spreadsheet Question Answering</h3>
+            <p>
+              Built a hybrid SQL–RAG pipeline for private spreadsheet QA, combining semantic retrieval with SQL verification to address retrieval incompleteness, metric ambiguity, and hidden assumptions in aggregation questions.
+            </p>
+            <p>
+              Evaluated direct answering, clarification-first answering, and dual-output multi-interpretation strategies on 25 ambiguous business questions and 75 total evaluations.
+            </p>
+            <div class="tags"><span>RAG</span><span>SQL Verification</span><span>Ambiguity-Aware QA</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Central South University · May 2025 – Aug. 2025</div>
+            <h3>W2R2: What–Where Representation Reforming for 3D Grounding</h3>
+            <p>
+              Identified a 2D semantic shortcut in multimodal 3D grounding using 2D-only ScanRefer diagnostics and t-SNE visualization, then proposed a pull–push training objective to encourage 3D features to dominate spatial grounding while 2D features retain semantic cues.
+            </p>
+            <div class="tags"><span>3D Grounding</span><span>Multimodal Learning</span><span>VLMs</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">University of Liverpool · Aug. 2025 – Nov. 2025</div>
+            <h3>T-MOTR: Temporal-Enhanced MOTR for Multi-Object Tracking</h3>
+            <p>
+              Developed a Transformer-based multi-object tracking extension for DanceTrack, integrating cross-attention gating, temporal self-attention, and temporal consistency loss to improve trajectory coherence under motion blur and occlusion.
+            </p>
+            <div class="tags"><span>Multi-Object Tracking</span><span>Transformers</span><span>DanceTrack</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">University of Liverpool · Dec. 2024 – May 2025</div>
+            <h3>LipSwin: Lightweight Swin Transformer for Visual Speech Recognition</h3>
+            <p>
+              Implemented a Swin Transformer-based visual encoder for word- and sentence-level lip-reading on LRW, LRS2, and LRS3, with a 3D spatio-temporal embedding module and lightweight temporal attention.
+            </p>
+            <div class="tags"><span>Visual Speech</span><span>Swin Transformer</span><span>Video Understanding</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="publications">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Publications</p>
+          <h2>Research outputs.</h2>
+        </div>
+        <ol class="pub-list">
+          <li>
+            <h3>Where, Not What: Compelling Video LLMs to Learn Geometric Causality for 3D-Grounding</h3>
+            <p><strong>Yutong Zhong</strong></p>
+            <p>Accepted to IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026), Barcelona, Spain.</p>
+          </li>
+          <li>
+            <h3>An Overview of RSA and OAEP Padding</h3>
+            <p><strong>Yutong Zhong</strong></p>
+            <p><em>Highlights in Science, Engineering and Technology</em>, 1, 82–86, 2022. <a href="https://doi.org/10.54097/hset.v1i.431" target="_blank" rel="noopener">DOI</a></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Experience</p>
+          <h2>Research, internship, teaching, and leadership.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">May 2026 – Aug. 2026</div>
+            <div>
+              <h3>Research Assistant · SIAT Shenzhen Institute of Advanced Integration Technology</h3>
+              <p>Maritime intelligent surveillance with video and radar data, focused on small-target detection, tracking, and abnormal-behavior warning.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">Jun. 2024 – Aug. 2024</div>
+            <div>
+              <h3>Data Analysis Intern · PricewaterhouseCoopers</h3>
+              <p>Data cleaning, analysis, visualization, and workflow automation using Python and Excel.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">Sep. 2024 – Present</div>
+            <div>
+              <h3>Math Grader · New York University</h3>
+              <p>Grading for Calculus I and Discrete Mathematics; supporting students through problem clarification and peer discussion.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">May 2024 – May 2025</div>
+            <div>
+              <h3>Organizer · Tandon CSSA PM Department</h3>
+              <p>Student-event outreach, promotional content, and social-media engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="education">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">Education</p>
+          <h2>Academic background.</h2>
+        </div>
+        <div class="edu-card">
+          <h3>New York University</h3>
+          <p>B.A. in Computer Science; Minor in Mathematics</p>
+          <p>College of Arts and Science · Sep. 2023 – May 2027</p>
+          <p>GPA: 3.85/4.00 · Dean’s List for Academic Year, 2023–2024 and 2024–2025</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© 2026 Yutong (Jennifer) Zhong.</p>
+      <p><a href="mailto:yz9760@nyu.edu">yz9760@nyu.edu</a> · <a href="https://github.com/JenniferZhong131" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
 </body>
 </html>
